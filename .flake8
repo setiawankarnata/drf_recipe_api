@@ -1,0 +1,11 @@
+[flake8]
+exclude =
+    .git,
+    .venv,
+    .idea,
+    migrations,
+    __pycache__,
+    manage.py,
+    settings.py,
+    wsgi.py,
+    asgi.py
