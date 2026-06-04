@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 from .models import User
 
+
 class UserAdmin(BaseUserAdmin):
     """Define the admin pages for users."""
     ordering = ['id']
@@ -39,7 +40,9 @@ class UserAdmin(BaseUserAdmin):
                 'is_active',
                 'is_staff',
                 'is_superuser',
-                ),
+            ),
         }),
     )
+
+
 admin.site.register(User, UserAdmin)
